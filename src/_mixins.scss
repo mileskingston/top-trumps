@@ -7,8 +7,8 @@
 @mixin font(
 	$style: false, 
 	$weight: $font-normal, 
+	$size: $font-base-size,
 	$lh: $line-height-base, 
-	$size: $font-base-size, 
 	$family: $font-main) {
 
 	@if $lh { font: $style $weight $size#{'/'}$lh $family; }

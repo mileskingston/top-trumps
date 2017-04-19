@@ -1,3 +1,24 @@
+/* Colours */
+$brand-primary: #f5d76e!default;
+$brand-grey-dark: #999!default;
+$brand-grey: #c1c1c1!default;
+$brand-grey-light: #f2f2f2!default;
+$brand-red: #f2dede!default;
+$brand-green: #dff0d8!default;
+$brand-blue: #d9edf7!default;
+$brand-white: #fff!default;
+$brand-black: #000!default;
+
+$brand-win: $brand-green;
+$brand-win-border: darken($brand-win, 15%);
+$brand-win-text: darken($brand-win, 40%);
+$brand-draw: $brand-blue;
+$brand-draw-border: darken($brand-draw, 15%);
+$brand-draw-text: darken($brand-draw, 40%);
+$brand-lose: $brand-red;
+$brand-lose-border: darken($brand-lose, 15%);
+$brand-lose-text: darken($brand-lose, 40%);
+
 /* Font */
 $font-main: 'Lato', sans-serif;
 $font-code: Menlo, Monaco, Consolas, "Courier New", monospace;
@@ -11,17 +32,14 @@ $line-height-base: 1.5;
 
 /* Spacing */
 $space-generic: 8px!default;
+$space-half: calc(#{$space-generic} / 2);
 $space-double: calc(#{$space-generic} * 2);
 
+/* Buttons */
+
+
 /* Borders */
-// $border-primary: 1px solid $brand-grey!default;
-// $border-color: $brand-grey!default;
+$border-primary: 1px solid $brand-grey!default;
+$border-color: $brand-grey!default;
 
 $radius-default: 3px!default;
-
-/* Buttons */
-// $btn-primary-text: $brand-white!default;
-// $btn-primary-background: $brand-blue!default;
-
-// $btn-second-text: $brand-grey-dark!default;
-// $btn-second-border: 1px solid $brand-grey!default;
