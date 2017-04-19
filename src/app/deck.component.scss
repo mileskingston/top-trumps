@@ -1,4 +1,4 @@
-@import '../_variables';
+@import '_variables';
 
 .card {
     padding: $space-generic;
@@ -12,14 +12,14 @@
 }
 
 .options {
-    font-size: 12px;
+    @include font-size(1.2);
 
     .label {
         display: inline-block;
-        margin: 4px 0;
+        margin: $space-half 0;
         font-weight: $font-bold;
         text-transform: uppercase;
-        font-size: 8px;
+        @include font-size(0.8);
         color: $brand-grey-dark;
     }
 }
@@ -38,7 +38,7 @@
     padding: $space-half;
     margin: $space-generic 0 0 0;
     text-align: center;
-    font-size: 14px;
+    @include font-size(1.4);
     background-color: $brand-white;  
     border: $border-primary;   
     border-radius: $radius-default; 
