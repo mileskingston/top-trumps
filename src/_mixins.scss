@@ -1,0 +1,37 @@
+@mixin font-size($sizeValue: 1.6) {
+  font-size: ($sizeValue * 10) + px;
+  font-size: $sizeValue + rem;
+}
+
+/* Font shorthand */
+@mixin font(
+	$style: false, 
+	$weight: $font-normal, 
+	$lh: $line-height-base, 
+	$size: $font-base-size, 
+	$family: $font-main) {
+
+	@if $lh { font: $style $weight $size#{'/'}$lh $family; }
+
+	@else { font: $style $weight $size $family; }
+}
+
+/* Media queries */
+$breakpoints: (
+  'mobile': 480px,
+  'tablet': 768px,
+  'tablet-wide': 1024px,
+	'desktop': 1200px
+);
+
+@mixin mq($width, $type: min) {
+  @if map_has_key($breakpoints, $width) {
+    $width: map_get($breakpoints, $width);
+    @if $type == max {
+    	$width: $width - 1px;
+    }
+    @media only screen and (#{$type}-width: $width) {
+    	@content;
+    }
+  }
+}

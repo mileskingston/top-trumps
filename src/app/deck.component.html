@@ -1,0 +1,44 @@
+<div class="deck row">
+  <div class="col">
+    <p class="lead">Select a card</p>
+  </div>
+  <div class="col col-4" *ngFor="let card of cards; let i = index">
+    <div class="card">
+      <h3>{{card.name}}</h3>
+      <img src="{{card.image}}" alt="{{card.name}}" />
+      <div class="options">
+          <span class="label">Year</span>
+          <button type="button" class="btn year" (click)="selectOption(card, 'year')">{{card.year}}</button>
+          <span class="label">Speed</span>
+          <button type="button" class="btn speed" (click)="selectOption(card, 'speed')">{{card.speed}}</button>
+          <span class="label">Engine</span>
+          <button type="button" class="btn engine" (click)="selectOption(card, 'engine')">{{card.engine}}</button>
+      </div>
+    </div>
+  </div>
+
+  <div *ngIf="message.title && !reset">
+    <div class="col">
+      <div class="alert" [ngClass]="message.title">{{message.message}}</div>
+    </div>
+      
+    <div class="col col-4 col-computer" *ngIf="compCard">
+      <div class="card">
+        <h3>{{compCard.name}}</h3>
+        <img src="{{compCard.image}}" alt="{{compCard.name}}" />
+        <div class="options">
+            <span class="label">Year</span>
+            <span class="option btn">{{compCard.year}}</span>
+            <span class="label">Speed</span>
+            <span class="option btn">{{compCard.speed}}</span>
+            <span class="label">Engine</span>
+            <span class="option btn">{{compCard.engine}}</span>
+        </div>
+      </div>
+    </div>
+  
+    <div class="col col-actions">
+      <button class="btn" type="reset" (click)="resetCard()">Reset</button>
+    </div>
+  </div>
+</div>

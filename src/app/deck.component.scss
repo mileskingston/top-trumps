@@ -1,0 +1,73 @@
+@import '../_variables';
+
+.card {
+    padding: $space-generic;
+    background-color: #fff;
+    border-radius: $radius-default;
+    border-bottom: 3px solid #c1c1c1;
+
+    img {
+        max-width: 100%;
+        display: none;    
+    }
+}
+
+.options {
+    font-size: 12px;
+    .label {
+        display: inline-block;
+        margin: 4px 0;
+        font-weight: $font-bold;
+        text-transform: uppercase;
+        font-size: 8px;
+        color: #999;
+    }
+}
+
+.col-computer {
+    margin-top: $space-generic;
+    margin-left: 37.5%;
+    
+    .option {
+        text-align: center;
+    }
+}
+.col-computer .option:hover,
+.col-computer .option:focus {
+    background-color: #e5e5e5; 
+}
+
+.alert {
+    padding: $space-generic;
+    margin: $space-generic 0 0 0;
+    text-align: center;
+    background-color: #fff;  
+    border: 1px solid #c1c1c1;   
+    border-radius: $radius-default; 
+}
+.alert.win {
+    background-color: #dff0d8;
+    color: #3c763d;
+    border-color: #3c763d;
+}
+.alert.draw {
+    background-color: #d9edf7;
+    color: #31708f;
+    border-color: #31708f;
+}
+.alert.lose {
+    background-color: #f2dede;
+    color: #a94442;  
+    border-color: #a94442;  
+}
+
+.col-actions {
+    margin-top: $space-double;
+    margin-bottom: $space-double;
+    text-align: center;
+    
+    .btn {
+        max-width: 200px;
+        padding: 5px;
+    }
+}

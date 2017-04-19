@@ -1,0 +1,30 @@
+[
+  { 
+    "name": "Mini Cooper", 
+    "year": 1961,
+    "speed": 124, 
+    "engine": 1600,
+    "image": "src/assets/images/mini-cooper.png"
+  },
+  { 
+    "name": "VW Golf", 
+    "year": 1974, 
+    "speed": 126, 
+    "engine": 1400,
+    "image": "src/assets/images/mini-cooper.png"
+  },
+  { 
+    "name": "Audi A4", 
+    "year": 1994, 
+    "speed": 143, 
+    "engine": 1800,
+    "image": "src/assets/images/mini-cooper.png"
+  },
+  { 
+    "name": "Porsche 911", 
+    "year": 1963, 
+    "speed": 188, 
+    "engine": 3800,
+    "image": "src/assets/images/mini-cooper.png"
+  }
+]

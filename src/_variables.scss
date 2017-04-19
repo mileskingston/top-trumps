@@ -1,0 +1,27 @@
+/* Font */
+$font-main: 'Lato', sans-serif;
+$font-code: Menlo, Monaco, Consolas, "Courier New", monospace;
+
+$font-base-size: 16px;
+
+$font-normal: 400;
+$font-bold: 700;
+
+$line-height-base: 1.5;
+
+/* Spacing */
+$space-generic: 8px!default;
+$space-double: calc(#{$space-generic} * 2);
+
+/* Borders */
+// $border-primary: 1px solid $brand-grey!default;
+// $border-color: $brand-grey!default;
+
+$radius-default: 3px!default;
+
+/* Buttons */
+// $btn-primary-text: $brand-white!default;
+// $btn-primary-background: $brand-blue!default;
+
+// $btn-second-text: $brand-grey-dark!default;
+// $btn-second-border: 1px solid $brand-grey!default;

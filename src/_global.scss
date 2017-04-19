@@ -1,0 +1,79 @@
+*, ::before, ::after {
+    box-sizing: border-box;
+}
+
+body {
+    padding: $space-generic 0;
+    margin: 0;
+    @include font(null, normal);
+    background-color: #f2f2f2;
+}
+
+h1, h2, h3, h4 {
+    margin-top: 0;
+    font-weight: $font-bold;
+}
+
+h1 {
+    font-size: 20px;
+}
+h3 {
+    font-size: 16px;
+}
+
+button, input, textarea, select {
+    font-size: 12px;
+}
+
+button {
+    cursor: pointer;
+}
+
+p {
+    margin: $space-generic 0;
+
+    &.lead {
+        font-weight: $font-bold;
+        font-size: 14px;
+    }
+}
+
+img {
+    max-width: 100%;
+}
+
+.container {  
+    max-width: 700px;
+    padding-right: $space-generic;
+    padding-left: $space-generic;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.row {
+    margin: 0 -$space-generic; 
+    @extend %clearfix;
+}
+
+.col {
+    float: left;
+    width: 100%;
+    padding-left: $space-generic;
+    padding-right: $space-generic;
+}
+.col-4 {
+    width: 25%;
+}
+
+.btn {
+    display: inline-block;
+    width: 100%;
+    color: #666;
+    border: 1px solid transparent;
+    border-radius: $radius-default;
+    background-color: #e5e5e5; 
+    
+    :hover, :focus {
+        background-color: #ccc;
+    }
+}
