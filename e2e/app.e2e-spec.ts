@@ -1,14 +1,18 @@
-import { TtScssPage } from './app.po';
+import { browser, element, by } from 'protractor';
 
-describe('tt-scss App', () => {
-  let page: TtScssPage;
+describe('app component', () => {
+  let title = element(by.css('app-root h1')),
+    deck = element(by.tagName('app-deck'));
 
   beforeEach(() => {
-    page = new TtScssPage();
+    browser.get('/');
   });
 
-  it('should display message saying app works', () => {
-    page.navigateTo();
-    expect(page.getParagraphText()).toEqual('app works!');
+  it('should display Top Trumps title', () => {
+    expect(title.getText()).toEqual('Top Trumps');
+  });
+
+  it('should display app-deck element', () => {
+    expect(deck.isPresent()).toBeTruthy();
   });
 });
