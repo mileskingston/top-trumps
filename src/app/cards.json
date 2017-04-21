@@ -11,20 +11,20 @@
     "year": 1974, 
     "speed": 126, 
     "engine": 1400,
-    "image": "src/assets/images/mini-cooper.png"
+    "image": "src/assets/images/vw-golf.jpg"
   },
   { 
     "name": "Audi A4", 
     "year": 1994, 
     "speed": 143, 
     "engine": 1800,
-    "image": "src/assets/images/mini-cooper.png"
+    "image": "src/assets/images/audi-a4.jpg"
   },
   { 
     "name": "Porsche 911", 
     "year": 1963, 
     "speed": 188, 
     "engine": 3800,
-    "image": "src/assets/images/mini-cooper.png"
+    "image": "src/assets/images/porsche-911.jpg"
   }
 ]

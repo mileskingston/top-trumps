@@ -32,7 +32,7 @@ export class DeckComponent implements OnInit, OnDestroy  {
       },
       error => this.errorMessage = <any>error
     );
-  }
+  };
 
   selectOption(card, option) {
     this.reset = false;

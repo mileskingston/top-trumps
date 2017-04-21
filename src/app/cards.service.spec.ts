@@ -1,15 +1,16 @@
-import { TestBed, inject } from '@angular/core/testing';
+import { inject, TestBed } from '@angular/core/testing';
+import { Observable } from 'rxjs/Rx';
 
 import { CardsService } from './cards.service';
+import { Icard } from './models/index';
 
-describe('CardsService', () => {
+fdescribe('Cards Service', () => {
+  let cardsService: CardsService,
+    mockHttp;
+
   beforeEach(() => {
-    TestBed.configureTestingModule({
-      providers: [CardsService]
-    });
+    mockHttp = jasmine.createSpyObj('mockHttp', ['get']);
+    cardsService = new CardsService(mockHttp);
   });
 
-  it('should ...', inject([CardsService], (service: CardsService) => {
-    expect(service).toBeTruthy();
-  }));
 });

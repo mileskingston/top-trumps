@@ -7,7 +7,7 @@
     border-bottom: 3px solid $brand-grey;
 
     img {
-        display: none;    
+        height: 77px;
     }
 }
 
@@ -37,7 +37,6 @@
 .alert {
     padding: $space-half;
     margin: $space-generic 0 0 0;
-    text-align: center;
     @include font-size(1.4);
     background-color: $brand-white;  
     border: $border-primary;   
@@ -63,7 +62,6 @@
 .col-actions {
     margin-top: $space-double;
     margin-bottom: $space-double;
-    text-align: center;
     
     .btn {
         max-width: 140px;

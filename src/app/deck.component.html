@@ -5,7 +5,9 @@
   <div class="col col-4" *ngFor="let card of cards; let i = index">
     <div class="card">
       <h3>{{card.name}}</h3>
-      <img src="{{card.image}}" alt="{{card.name}}" />
+      <div class="text-center">
+        <img src="{{card.image}}" alt="{{card.name}}" />
+      </div>
       <div class="options">
           <span class="label">Year</span>
           <button type="button" class="btn year" (click)="selectOption(card, 'year')">{{card.year}}</button>
@@ -18,7 +20,7 @@
   </div>
 
   <div *ngIf="message.title && !reset">
-    <div class="col">
+    <div class="col text-center">
       <div class="alert" [ngClass]="message.title">{{message.message}}</div>
     </div>
       
@@ -37,7 +39,7 @@
       </div>
     </div>
   
-    <div class="col col-actions">
+    <div class="col col-actions text-center">
       <button class="btn btn-secondary" type="reset" (click)="resetCard()">Reset</button>
     </div>
   </div>
